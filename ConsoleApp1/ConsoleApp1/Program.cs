@@ -18,6 +18,12 @@ namespace FirstConsoleApp
             Console.WriteLine("Press the enter key to continue.");
             Console.ReadLine();
             Console.WriteLine(message);
+            var ciy = "Basel";
+            var temperature = 12.4f;
+            var currentDate = DateTime.Now;
+            var welcome = string.Format("Welcome to {0}. The time is {1}. The temperature is {2}.", ciy, currentDate, temperature);
+            Console.WriteLine(welcome);
+
             Console.WriteLine("Press the enter key to exit.");
             Console.ReadLine();
         }
