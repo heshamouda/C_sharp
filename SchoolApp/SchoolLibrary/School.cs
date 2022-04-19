@@ -8,15 +8,33 @@ namespace SchoolLibrary
 {
     internal class School
     {
-        string Name { get; set; }
-        string Description { get; set; }
-        string type { get; set; }
-        string Address { get; set;}
-        string SchoolCity { get; set; }
-        string SchoolCountry { get; set; }
-        string SchoolPhone { get; set; }
-        string SchoolPostalCode { get; set; }
-        string SchoolCountryCode { get; set; }
-                    
+       public string Name { get; set; }
+       public string Description { get; set; }
+       public string type { get; set; }
+       public string Address { get; set; }
+       public string SchoolCity { get; set; }
+       public string SchoolCountry { get; set; }
+       public string SchoolPhone { get; set; }
+       public string SchoolPostalCode { get; set; }
+       public string SchoolCountryCode { get; set; }
+
+        private string _twitterAddress;
+        public string TwitterAddress
+        {
+            //make sure that the twitter address starts with @
+            get { return _twitterAddress; }
+            set
+            {
+                if (value.StartsWith("@")) {
+                    _twitterAddress = value.Substring(1);
+                }
+                else
+                {
+                    throw new Exception("The twitter address must begin with @");
+                }    
+            }
+        }
+
+
     }
 }
