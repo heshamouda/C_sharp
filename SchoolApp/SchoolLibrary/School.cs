@@ -17,6 +17,7 @@ namespace SchoolLibrary
         string SchoolPhone;
         string SchoolPostalCode;
         string SchoolCountryCode;
-        
+
+             
     }
 }
