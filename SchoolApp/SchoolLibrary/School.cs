@@ -61,8 +61,22 @@ namespace SchoolLibrary
 
         public static int AverageThreeScores(int a, int b, int c)
         {
+
             var result = (a + b + c) / 3;
             return result;
+        }
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine (this.Name);
+            sb.AppendLine(Address);
+            sb.AppendLine(SchoolCity);
+            sb.AppendLine(" , ");
+            sb.AppendLine(SchoolCountry);
+            sb.AppendLine("  ");
+            sb.AppendLine(SchoolCountryCode);
+
+            return sb.ToString();
         }
     }
 }
