@@ -8,16 +8,15 @@ namespace SchoolLibrary
 {
     internal class School
     {
-        string SchoolName;
-        string SchoolDescription;
-        string SchoolType;
-        string SchoolAdress;
-        string SchoolCity;
-        string SchoolCountry;
-        string SchoolPhone;
-        string SchoolPostalCode;
-        string SchoolCountryCode;
-
-             
+        string Name { get; set; }
+        string Description { get; set; }
+        string type { get; set; }
+        string Address { get; set;}
+        string SchoolCity { get; set; }
+        string SchoolCountry { get; set; }
+        string SchoolPhone { get; set; }
+        string SchoolPostalCode { get; set; }
+        string SchoolCountryCode { get; set; }
+                    
     }
 }
