@@ -59,7 +59,7 @@ namespace SchoolLibrary
 
 
 
-        public int AverageThreeScores(int a, int b, int c)
+        public static int AverageThreeScores(int a, int b, int c)
         {
             var result = (a + b + c) / 3;
             return result;
